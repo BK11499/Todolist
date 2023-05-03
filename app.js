@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB",{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://balakrishnan11499:test123@cluster0.8vboaha.mongodb.net/todolistDB",{useNewUrlParser:true})
 .then(function(){
   console.log("MongoDB Connected Successfully");
 })
